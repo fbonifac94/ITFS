@@ -14,6 +14,7 @@ try:
     for z in parrafos:
         z = z.replace(",", "|");
         newFile.write(z);
+        print(z);
         break;
 except Exception as e:
     print(e);
