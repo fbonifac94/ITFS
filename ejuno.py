@@ -7,15 +7,17 @@ parser.add_argument("-f", "--filename");
 args = parser.parse_args();
 
 try:
-    fileO = open(args.filename, "r+");
+    fileO = open(args.filename, "r");
     parrafos = fileO.readlines();
-    newFile = open("newfile.txt", "a+")
+    newFile = open("newfile.txt", "a+");
     
     for z in parrafos:
         z = z.replace(",", "|");
         newFile.write(z);
-        print(z);
-        break;
+    
+    fileO.close();
+    newFile.close();
+        
 except Exception as e:
     print(e);
     

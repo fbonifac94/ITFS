@@ -1,1 +1,4 @@
 git init inicializa un repositorio como git
+
+
+with sirve para definir que pasa a la entrada o salida del bloque with
